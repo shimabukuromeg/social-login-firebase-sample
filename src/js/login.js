@@ -1,6 +1,9 @@
 import {
   getAuth,
+  // 認証時にポップアップ表示
   signInWithPopup,
+  // 認証時にリダイレクト
+  signInWithRedirect,
   GoogleAuthProvider,
   GithubAuthProvider,
 } from "firebase/auth";
@@ -22,7 +25,7 @@ const redirectToMyPageWhenLoginSuccess = async (provider) => {
      * emailVerified が true メールアドレスが確認ずみ
      * emailVerified が false メールアドレスが確認されていない
      */
-    const result = await signInWithPopup(auth, provider);
+    const result = await signInWithRedirect(auth, provider);
     console.log("result", result);
     // メールが確認されていない場合はメール登録画面に遷移する
     if (!result.user.emailVerified) {
