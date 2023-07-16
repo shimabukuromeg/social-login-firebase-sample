@@ -31,7 +31,7 @@ sequenceDiagram
     participant C as Firebase Auth
     participant D as IdP(Google)
     A->>B: 1.ログイン操作（Googleでログインするボタン）
-    B->>C: 2.アプリがGoogleログインに<br />に関するFirebaseAuthのAPI<br>を呼び出す。<br><br>signInWithPopup(auth, provider）
+    B->>C: 2.アプリがGoogleログインに<br />に関するFirebaseAuthのAPI<br>を呼び出す。<br><br>signInWithPopup(auth, provider）<br>/ signInWithRedirect(auth, provider);
     C->>D: 3.FirebaseAuthが<br>IdP(Google)に対して<br>ログイン処理を開始する<br>リクエストする
     D->>A: 4.IdP(Google)とUserでGoogle認証が行われる（ブラウザにポップアップ表示される）
     A->>D: 5.認証情報
