@@ -1,0 +1,21 @@
+# social-login
+
+```bash
+# ツールインストール
+$ npm install -g firebase-tools
+
+# バージョン確認
+$ firebase --version
+
+# ログイン
+$ firebase login
+
+# プロジェクト作成
+$ firebase init
+
+# デプロイ
+$ firebase deploy
+
+# ビルド & デプロイ
+$ npm run deploy
+```
