@@ -1,4 +1,6 @@
-# social-login
+# social-login-firebase-sample
+
+## get started
 
 ```bash
 # ツールインストール
@@ -19,6 +21,8 @@ $ firebase deploy
 # ビルド & デプロイ
 $ npm run deploy
 ```
+
+## シーケンス図
 
 ```mermaid
 sequenceDiagram
